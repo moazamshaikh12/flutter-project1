@@ -163,6 +163,9 @@ class Login  extends StatelessWidget {
                   ElevatedButton(onPressed: (){
                     Navigator.push(context, MaterialPageRoute(builder: (context){return const Signup();} ));
                   },
+                    style: ButtonStyle(
+                      backgroundColor: MaterialStateProperty.all<Color>(Colors.white)
+                    ),
                     child: const Text("Sign up",style: TextStyle(
                         fontSize: 16,
                         fontFamily: "Roboto-Medium",
